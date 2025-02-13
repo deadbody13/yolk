@@ -30,21 +30,23 @@ input {
     }
     // focus-follows-mouse
 }
+// {% if SYSTEM.hostname == "motley.desktop" %}
+//<yolk> // top
+//<yolk> output "DP-3" {
+    //<yolk> mode "2560x1440@119.998"
+    //<yolk> scale 1.0
+    //<yolk> transform "normal"
+    //<yolk> position x=0 y=0
+//<yolk> }
+//<yolk> // bottom
+//<yolk> output "DP-4" {
+    //<yolk> mode "2560x1440@119.998"
+    //<yolk> scale 1.0
+    //<yolk> transform "normal"
+    //<yolk> position x=0 y=1440
+//<yolk> }
+// {% end %}
 
-// top
-output "DP-3" {
-    mode "2560x1440@119.998"
-    scale 1.0
-    transform "normal"
-    position x=0 y=0
-}
-// bottom
-output "DP-4" {
-    mode "2560x1440@119.998"
-    scale 1.0
-    transform "normal"
-    position x=0 y=1440
-}
 
 layout {
     gaps 15
